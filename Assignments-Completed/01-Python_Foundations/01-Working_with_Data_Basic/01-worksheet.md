@@ -7,10 +7,10 @@ Use this worksheet to review and reinforce your understanding of Python data con
 ## 🧠 Section 1: Lists
 
 1. What method adds an item to the end of a list?  
-   `Answer:` ____________________________
+   `Answer:` _________append()_________
 
 2. How can you remove an item from a list by value?  
-   `Answer:` ____________________________
+   `Answer:` ___________remove()___________
 
 3. What’s the result of this code?
 
@@ -20,7 +20,7 @@ nums.append(8)
 print(nums)
 ```
 
-   `Answer:` ____________________________
+   `Answer:` ________[2, 4, 6, 8]_________
 
 ---
 
@@ -37,10 +37,10 @@ print(nums)
 ## 🔒 Section 2: Tuples
 
 4. What is a key difference between a list and a tuple?  
-   `Answer:` ____________________________
+   `Answer:` _Lists are mutable, while tuples are immutable
 
 5. Can you change the contents of a tuple once it is created? Why or why not?  
-   `Answer:` ____________________________
+   `Answer:` _No, because tuples are immutable, meaning their values cannot be modified after creation.
 
 ---
 
@@ -56,10 +56,10 @@ print(nums)
 ## 🔑 Section 3: Dictionaries
 
 6. What does the `.get()` method do differently from accessing a key directly?  
-   `Answer:` ____________________________
+   `Answer:` _________.get() returns None___________
 
 7. How do you loop through both keys and values in a dictionary?  
-   `Answer:` ____________________________
+   `Answer:` __________.items()___________
 
 ---
 
@@ -70,10 +70,17 @@ print(nums)
 # Print each key and value in the format "key: value".
 ```
 
----
+person = {
+    "name": "Kevin",
+    "age": 21,
+    "hobby": "basketball"
+}
+
+for key, value in person.items():
+    print(f"{key}: {value}")
 
 ## 🧾 Submit Checklist
 
-- [ ] I practiced creating and modifying lists.
-- [ ] I understand how tuples are different from lists.
-- [ ] I accessed and looped through dictionary items.
+- [✅] I practiced creating and modifying lists.
+- [✅] I understand how tuples are different from lists.
+- [✅] I accessed and looped through dictionary items.
