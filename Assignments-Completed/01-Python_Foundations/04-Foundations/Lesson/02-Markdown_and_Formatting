@@ -1,0 +1,347 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "VMNvmaIoqPcz"
+      },
+      "source": [
+        "# 📝 02 - Markdown and Formatting\n",
+        "\n",
+        "Jupyter notebooks are not just for code — you can mix **Markdown** and code to create clear, professional-looking reports.\n",
+        "\n",
+        "This notebook introduces:\n",
+        "- Writing Markdown cells (headings, lists, links)\n",
+        "- Adding inline **LaTeX math**\n",
+        "- Embedding images\n",
+        "- Why formatting matters in data science communication\n"
+      ],
+      "id": "VMNvmaIoqPcz"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "H2PXQcnoqPc0"
+      },
+      "source": [
+        "## 1. Headings and Text Styles"
+      ],
+      "id": "H2PXQcnoqPc0"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "StK9B3QQqPc0"
+      },
+      "source": [
+        "### Example\n",
+        "# Heading 1\n",
+        "## Heading 2\n",
+        "### Heading 3\n",
+        "\n",
+        "**Bold text**, *italic text*, `inline code`"
+      ],
+      "id": "StK9B3QQqPc0"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ftvXMY_2qPc0"
+      },
+      "source": [
+        "✅ **Your Turn**: Create a cell with the heading `## My Favorite Data Tools` and list at least three tools in bold."
+      ],
+      "id": "ftvXMY_2qPc0"
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## My Favorite Data Tools\n",
+        "- **Jupyter Notebook**\n",
+        "- **Pandas**\n",
+        "- ***Matplotlib***"
+      ],
+      "metadata": {
+        "id": "fzaGXzKLqd0R"
+      },
+      "id": "fzaGXzKLqd0R"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "H4x1VHKvqPc0"
+      },
+      "source": [
+        "## 2. Lists"
+      ],
+      "id": "H4x1VHKvqPc0"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "y2Eh99JaqPc0"
+      },
+      "source": [
+        "### Example\n",
+        "- Item 1\n",
+        "- Item 2\n",
+        "  - Sub-item 2a\n",
+        "  - Sub-item 2b\n",
+        "\n",
+        "1. First\n",
+        "2. Second\n",
+        "3. Third"
+      ],
+      "id": "y2Eh99JaqPc0"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "_Suy9LhWqPc0"
+      },
+      "source": [
+        "✅ **Your Turn**: Make an ordered list of your top 3 programming languages."
+      ],
+      "id": "_Suy9LhWqPc0"
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. Python\n",
+        "2. JavaS\n",
+        "3. C++"
+      ],
+      "metadata": {
+        "id": "ViWm6CacqtFV"
+      },
+      "id": "ViWm6CacqtFV"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "6vnbRJ-LqPc0"
+      },
+      "source": [
+        "## 3. Links and Images"
+      ],
+      "id": "6vnbRJ-LqPc0"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ieQdApkeqPc0"
+      },
+      "source": [
+        "### Links\n",
+        "[OpenAI](https://www.openai.com)\n",
+        "\n",
+        "### Images\n",
+        "![MSU Logo](https://upload.wikimedia.org/wikipedia/en/8/8b/Midwestern_State_University_seal.png)"
+      ],
+      "id": "ieQdApkeqPc0"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "UKfGc_aEqPc0"
+      },
+      "source": [
+        "✅ **Your Turn**: Insert a link to your favorite website and embed an image (can be a URL or local file)."
+      ],
+      "id": "UKfGc_aEqPc0"
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "https://msutexas.edu/admissions/_assets/images/spirit-mustangs.jpg"
+      ],
+      "metadata": {
+        "id": "MoPzdTG1rHbS"
+      },
+      "id": "MoPzdTG1rHbS"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "qZUA529bqPc0"
+      },
+      "source": [
+        "## 4. LaTeX Math"
+      ],
+      "id": "qZUA529bqPc0"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "QInRkj8eqPc0"
+      },
+      "source": [
+        "You can render math using LaTeX syntax inside `$ ... $` for inline or `$$ ... $$` for block math.\n",
+        "\n",
+        "Example:  \n",
+        "Inline: $E = mc^2$  \n",
+        "Block:\n",
+        "$$\n",
+        "\\frac{\\partial f}{\\partial x} = 2x\n",
+        "$$"
+      ],
+      "id": "QInRkj8eqPc0"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "nGNeKKu9qPc0"
+      },
+      "source": [
+        "✅ **Your Turn**: Write the quadratic formula in LaTeX."
+      ],
+      "id": "nGNeKKu9qPc0"
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "The quadratic formula is:\n",
+        "\n",
+        "$$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$"
+      ],
+      "metadata": {
+        "id": "3kjNbCS4rOcx"
+      },
+      "id": "3kjNbCS4rOcx"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "JmP76pmnqPc1"
+      },
+      "source": [
+        "## 5. Mixing Code and Markdown"
+      ],
+      "id": "JmP76pmnqPc1"
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "ANixl_loqPc1"
+      },
+      "outputs": [],
+      "source": [
+        "# Example: create data in Python\n",
+        "numbers = [1, 2, 3, 4, 5]\n",
+        "squares = [n**2 for n in numbers]\n",
+        "squares"
+      ],
+      "id": "ANixl_loqPc1"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "YGBeoaDvqPc1"
+      },
+      "source": [
+        "Now we explain results in Markdown:\n",
+        "- The list `numbers` contained 1–5.\n",
+        "- The list `squares` contains each number squared.\n",
+        "- Mixing narrative + results is why notebooks are so powerful."
+      ],
+      "id": "YGBeoaDvqPc1"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "XSnrp4O2qPc1"
+      },
+      "source": [
+        "✅ **Your Turn**: Create a list of 3 numbers, calculate their cubes in code, then explain in Markdown."
+      ],
+      "id": "XSnrp4O2qPc1"
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Create a list of 3 numbers\n",
+        "numbers = [2, 4, 6]\n",
+        "\n",
+        "# Calculate cubes\n",
+        "cubes = [n**3 for n in numbers]\n",
+        "cubes"
+      ],
+      "metadata": {
+        "id": "wAyWZHTtrTYG",
+        "outputId": "3d5e1431-b6c1-484b-fdbb-428dba10bb68",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "id": "wAyWZHTtrTYG",
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[8, 64, 216]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "nB5a9XC5rXVv"
+      },
+      "id": "nB5a9XC5rXVv",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "The list `numbers` contains 2, 4, and 6.  \n",
+        "The list `cubes` contains each number raised to the power of 3: 8, 64, and 216.  \n",
+        "\n",
+        "This shows how we can combine Python code and Markdown explanation for clear storytelling in a notebook."
+      ],
+      "metadata": {
+        "id": "qt4pskbkrWZ3"
+      },
+      "id": "qt4pskbkrWZ3"
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "6_Mk2LJsqPc1"
+      },
+      "source": [
+        "---\n",
+        "### Summary\n",
+        "- Use headings and formatting to organize.\n",
+        "- Lists and links make content readable.\n",
+        "- LaTeX lets you add professional math.\n",
+        "- Combine code + Markdown for clear data storytelling.\n"
+      ],
+      "id": "6_Mk2LJsqPc1"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    },
+    "language_info": {
+      "name": "python",
+      "version": "3.x"
+    },
+    "colab": {
+      "provenance": []
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
