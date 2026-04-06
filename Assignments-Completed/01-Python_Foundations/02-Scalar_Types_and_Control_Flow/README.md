@@ -1,4 +1,3 @@
-
 [KevinKangethe__01_Scalar_Types.ipynb](https://github.com/user-attachments/files/26494205/KevinKangethe__01_Scalar_Types.ipynb)
 {
   "cells": [
