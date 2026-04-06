@@ -27,7 +27,7 @@ print(type(x))
 ```python
 # Create a variable for each type and print its value and type
 # Example: an int, float, str, and bool
-```
+
 
 --- num = 25
 pi = 3.14
@@ -38,7 +38,7 @@ print(num, type(num))
 print(pi, type(pi))
 print(name, type(name))
 print(is_ready, type(is_ready))
-
+```
 ## 🔁 Section 2: Comparison Operators
 
 3. What does the `!=` operator mean?
@@ -63,14 +63,14 @@ print(a < b or b < 10)
 
 ```python
  #Your code:
-```
+
 grade = 75
 
 if grade >= 70:
     print("Pass")
 else:
     print("Fail")
-
+```
 6. What does `elif` allow you to do?
 
 Answer:` ____elif allows you to check additional conditions after an if statement without writing a new separate if______
@@ -84,10 +84,11 @@ Write a program that asks for the weather and prints:
 - "Take an umbrella" if it's raining
 - "Check the forecast" otherwise
   weather = input("Enter the weather: ")
-
+```
 if weather == "sunny":
     print("Bring sunscreen")
 elif weather == "raining":
     print("Take an umbrella")
 else:
     print("Check the forecast")
+```
