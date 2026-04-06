@@ -85,6 +85,8 @@ Write a program that asks for the weather and prints:
 - "Check the forecast" otherwise
   weather = input("Enter the weather: ")
 ```
+weather = input("Enter the weather: ")
+
 if weather == "sunny":
     print("Bring sunscreen")
 elif weather == "raining":
