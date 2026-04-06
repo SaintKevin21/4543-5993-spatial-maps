@@ -1,0 +1,134 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "id": "2843d4ba",
+      "metadata": {
+        "id": "2843d4ba"
+      },
+      "source": [
+        "# 📘 03 - File Loops and `with`\n",
+        "\n",
+        "Use `with open(...)` to read files and process content."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "4d270565",
+      "metadata": {
+        "id": "4d270565"
+      },
+      "source": [
+        "## ✅ Learning Goals\n",
+        "- Open and read files using `with`\n",
+        "- Loop over lines in a file\n",
+        "- Use `.strip()` and `.split()` to process text"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "4ac4df0a",
+      "metadata": {
+        "id": "4ac4df0a"
+      },
+      "outputs": [],
+      "source": [
+        "# 📝 Sample file read\n",
+        "with open('sample.txt', 'r') as file:\n",
+        "    for line in file:\n",
+        "        print(line.strip())"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "4f430e6d",
+      "metadata": {
+        "id": "4f430e6d"
+      },
+      "outputs": [],
+      "source": [
+        "# 🔍 Process each line\n",
+        "with open('sample.txt', 'r') as f:\n",
+        "    for line in f:\n",
+        "        parts = line.strip().split(',')\n",
+        "        print('Parts:', parts)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "c5f556e4",
+      "metadata": {
+        "id": "c5f556e4"
+      },
+      "source": [
+        "### ✏️ Your Turn\n",
+        "Open a text file and print all lines that contain more than 3 words."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "0c72a05f",
+      "metadata": {
+        "id": "0c72a05f"
+      },
+      "outputs": [],
+      "source": [
+        "# Tip: use `len(line.split()) > 3` to check"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Open the file and process each line\n",
+        "with open('sample.txt', 'r') as file:\n",
+        "    for line in file:\n",
+        "        # Remove whitespace at ends\n",
+        "        clean_line = line.strip()\n",
+        "\n",
+        "        # Split into words and check length\n",
+        "        if len(clean_line.split()) > 3:\n",
+        "            print(clean_line)"
+      ],
+      "metadata": {
+        "id": "n6IlrJo5OICW",
+        "outputId": "6d7856d8-5bef-4d67-e0d5-909e4d68fbec",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 216
+        }
+      },
+      "id": "n6IlrJo5OICW",
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "FileNotFoundError",
+          "evalue": "[Errno 2] No such file or directory: 'sample.txt'",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mFileNotFoundError\u001b[0m                         Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipykernel_1716/1350004843.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;31m# Open the file and process each line\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0;32mwith\u001b[0m \u001b[0mopen\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'sample.txt'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m'r'\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0mfile\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      3\u001b[0m     \u001b[0;32mfor\u001b[0m \u001b[0mline\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mfile\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m         \u001b[0;31m# Remove whitespace at ends\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m         \u001b[0mclean_line\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mline\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mstrip\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mFileNotFoundError\u001b[0m: [Errno 2] No such file or directory: 'sample.txt'"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
